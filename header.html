@@ -21,7 +21,12 @@
     />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300"
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300, 400, 700"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700"
       rel="stylesheet"
     />
 
@@ -31,29 +36,200 @@
   </head>
   <body>
     <!-- HEADER -->
-    <h1>BLOG</h1>
+    <header>
+      <h1>Blog</h1>
 
-    <!-- NAV BAR -->
+      <!-- NAV BAR -->
 
-    <nav id="mainNavbar" class="navbar navbar-expand-md   navbar-light">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navLinks"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navLinks">
-        <ul class="navbar-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Fashion</a></li>
-          <li><a href="#">Travel</a></li>
-          <li><a href="#">Lifestyle</a></li>
-        </ul>
+      <nav id="mainNavbar" class="navbar navbar-expand-md navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navLinks"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+          <ul class="navbar-links">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">About Me</a>
+                <a class="dropdown-item" href="#">FAQ</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Fashion
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Summer</a>
+                <a class="dropdown-item" href="#">Fall</a>
+                <a class="dropdown-item" href="#">Winter</a>
+                <a class="dropdown-item" href="#">Spring</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Lifestyle
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Food</a>
+                <a class="dropdown-item" href="#">Fitness</a>
+                <a class="dropdown-item" href="#">Home Decor</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Travel
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Europe</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--
+      --------------
+      POSTS
+      --------------
+    -->
+    <div class="container">
+      <div id="Post">
+        <h2>Blog Post 1</h2>
+        <h3>November 25, 2019</h3>
+
+        <img
+          src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+          alt="trench coat picture"
+        />
+        <i class="social far fa-arrow-alt-circle-right"> </i>
+        <p class="overlay-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+          accusantium corporis similique molestiae atque, optio veritatis sint
+          pariatur eos iste delectus hic. Voluptate ipsa asperiores deserunt eum
+          voluptates voluptatem accusamus harum possimus optio earum architecto
+          autem obcaecati enim assumenda, quidem nisi laboriosam a magnam modi.
+        </p>
+        <button>Read More</button>
+        <hr class="style-two" />
       </div>
-    </nav>
+    </div>
+
+    <!--
+      --------------
+      FOOTER
+      --------------
+    -->
+
+    <footer>
+      <!--
+        <div class="row">
+          <div class="column">
+            <img
+              src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+              alt="fashion picture"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1519947486511-46149fa0a254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1490915785914-0af2806c22b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1490707967831-1fd9b48e40e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1296&q=60"
+              alt=""
+            />
+          </div>
+          <div class="column">
+            <img
+              src="https://images.unsplash.com/photo-1506377585622-bedcbb027afc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1296&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1501459277917-04a80f948092?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1296&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1529349269623-0f08511ba573?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              alt=""
+            />
+          </div>
+          <div class="column">
+            <img
+              src="https://images.unsplash.com/photo-1495385794356-15371f348c31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1296&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1513806562344-c75007ad303f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1468534555638-df185fc47f0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1525987654770-69ad51b49be4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+              alt=""
+            />
+          </div>
+        </div>
+      -->
+      <div class="footer">Blog</div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -70,5 +246,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <script type="text/javascript" src="header.js"></script>
   </body>
 </html>
