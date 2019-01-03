@@ -62,6 +62,10 @@ h1 {
   background: white;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 #mainNavbar.scrolled {
   background: #ece0d3;
   transition: background 700ms;
@@ -82,7 +86,6 @@ BODY
 ----------- */
 
 .container {
-  /* background: lightgray; */
   position: relative;
   padding: 80px 20px 80px 80px;
 }
@@ -175,6 +178,8 @@ FOOTER
 ------------ */
 
 .footer {
+  position: absolute;
+  width: 100%;
   background: #ece0d3;
   padding: 30px;
   text-align: center;
@@ -183,4 +188,32 @@ FOOTER
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin-top: -4px;
+}
+
+#collage {
+  line-height: 0;
+
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+  height: 15%;
+  margin-bottom: 0;
+}
+
+#collage img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: fill;
+}
+
+@media (max-width: 800px) {
+  #collage {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
 }
