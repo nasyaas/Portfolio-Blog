@@ -1,0 +1,286 @@
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 55px;
+  height: 150px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+/* ----------
+   NAVBAR 
+   ----------*/
+#mainNavbar {
+  text-align: center;
+  border-bottom: double 6px #ece0d3;
+  width: 100%;
+  /* position: fixed; */
+}
+
+#navLinks > ul {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#navLinks > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+#navLinks > ul > li > a:hover {
+  color: #ece0d3;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.dropdown-item {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.dropdown-menu {
+  border: solid 1px #ece0d3;
+  padding: 20px;
+}
+
+.dropdown-item:hover {
+  color: #ece0d3;
+  background: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#mainNavbar.scrolled {
+  background: #ece0d3;
+  transition: background 700ms;
+  /* margin-top: 0; */
+  /* position: fixed; */
+}
+
+/* .fixed-top {
+  margin-top: 150px;
+}*/
+
+p {
+  padding-top: 90px;
+}
+
+/* -----------
+HOMEPAGE BODY
+----------- */
+
+.container {
+  position: relative;
+  padding: 80px 20px 80px 80px;
+}
+.post {
+  margin-top: 50px;
+}
+
+.mpTitle {
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+}
+
+.mpDate {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border: solid 1px #ece0d3;
+  width: 20%;
+  padding: 10px;
+}
+
+hr.style-two {
+  margin-top: 250px;
+  border: 0;
+  height: 1.4px;
+  background: #333;
+  background-image: linear-gradient(to right, #f3eceb, #ece0d3, #f3eceb);
+}
+
+.mpImg {
+  /* edit for media query */
+  position: relative;
+  width: 411px;
+  height: 617px;
+  display: block;
+  align-content: center;
+}
+
+.social {
+  position: absolute;
+  background: #ece0d3;
+  font-size: 20px;
+  margin-top: -520px;
+  margin-left: 360px;
+  padding: 18px;
+}
+
+.social:hover {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
+  padding-right: 150px;
+  transition: 500ms;
+  text-align: start;
+}
+
+.overlay-text {
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  position: relative;
+  margin-top: -450px;
+  margin-left: 360px;
+  font-size: 12px;
+  width: 60%;
+  padding: 50px;
+  background: #ece0d3;
+  border: 20px solid #ffffff;
+}
+
+.mpBtn {
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 40px;
+  margin-top: -100px;
+  margin-left: 580px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: double 4px #ece0d3;
+}
+
+.mpBtn:hover {
+  background: #ece0d3;
+  color: #000000;
+  border: double 4px #000000;
+}
+
+/* --------------
+INDV PAGES
+-------------- */
+
+.pageTitle {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.pageDate {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+.pageImg {
+  display: block;
+  padding-top: 0;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+}
+
+.pageText { 
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  padding: 70px 330px;
+}
+
+.pageBtn {
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 40px;
+  /* fix!!!!!! */
+  margin-left: 45%;
+  margin-bottom: 100px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: double 4px #ece0d3;
+}
+
+.pageBtn:hover {
+  background: #ece0d3;
+  color: #000000;
+  border: double 4px #000000;
+}
+
+
+
+/* ------------
+FOOTER 
+------------ */
+
+.footer {
+  position: absolute;
+  width: 100%;
+  background: #ece0d3;
+  padding: 30px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+
+#collage {
+  line-height: 0;
+
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+  height: 15%;
+  margin-bottom: 0;
+}
+
+#collage img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+@media (max-width: 800px) {
+  #collage {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
