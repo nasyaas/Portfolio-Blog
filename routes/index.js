@@ -5,6 +5,8 @@ const router = express.Router();
 router.get("/", (req, res) => res.render("homepage"));
 
 //BLOG FULL PAGES
+
 router.get("/cameltrench", (req, res) => res.render("cameltrench"));
+
 
 module.exports = router;

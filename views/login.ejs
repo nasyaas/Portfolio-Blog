@@ -1,0 +1,18 @@
+<% include partials/header %>
+
+<div class="containerLogin">
+    <div class="box">
+        <p id="loginTitle" class="login">Login</p>
+        <img id="lhImg" class="loginImg" src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80"
+            alt="plaid coat">
+        <form action="/user/login" method="POST">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="text" name="password" placeholder="Password" id="">
+        </form>
+        <button class="loginBtn">Submit</button>
+        <p class="bottomText"> Don't have an account?
+            <a href="/user/signup">Sign Up</a></p>
+    </div>
+</div>
+
+<% include partials/footer %>

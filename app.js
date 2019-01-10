@@ -11,8 +11,8 @@ app.use("/public", express.static("public"));
 //ROUTES
 
 app.use("/", require("./routes/index.js"));
-app.use("/users", require("./routes/user.js"));
-app.use("/cameltrench", require("./routes/index.js"));
+app.use("/user", require("./routes/user"));
+
 
 const PORT = process.env.PORT || 5000;
 
