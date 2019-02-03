@@ -5,12 +5,13 @@
         <p id="loginTitle" class="suTitle">Sign Up</p>
         <img id="lhImg" class="suImg" src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80"
             alt="plaid coat">
+        <% include partials/messages %>
         <form action="/user/signup" method="POST">
-            <input type="text" name="firstname" placeholder="First Name" value="<%= typeof name != 'undefined' ? name : '' %>">
-            <input type="text" class="email" placeholder="Email" value="<%= typeof email != 'undefined' ? email : '' %>">
-            <input type="text" name="password" id="" placeholder="Password" value="<%= typeof password != 'undefined' ? password : '' %>">
+            <input type="name" name="name" placeholder="First Name" value="<%= typeof name != 'undefined' ? name : '' %>">
+            <input type="email" name="email" class="email" placeholder="Email" value="<%= typeof email != 'undefined' ? email : '' %>">
+            <input type="password" name="password" id="" placeholder="Password" value="<%= typeof password != 'undefined' ? password : '' %>">
+            <button class="loginBtn">Submit</button>
         </form>
-        <button class="loginBtn">Submit</button>
         <p class="bottomText"> Already have an account?
             <a href="/user/login">Log In</a></p>
     </div>
