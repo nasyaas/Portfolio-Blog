@@ -46,6 +46,7 @@ app.use((req, res, next) => {
   res.locals.success_msg = req.flash("success_msg");
   res.locals.error_msg = req.flash("error_msg");
   res.locals.error = req.flash("error");
+  res.locals.user = req.user || null;
   next();
 });
 
@@ -57,16 +58,3 @@ app.use("/user", require("./routes/user"));
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
-
-// var bodyParser = require('body-parser"),
-//   mongoose = require("mongoose");
-// (express = require("express")), (app = express());
-
-// mongoose.connect("mongodb://localhost/portfolio-blog");
-// app.set("view engine", "ejs");
-// app.use(express.static("public"));
-// app.use(bodyParser.urlencoded({ extended: true }));
-
-// app.listen(process.emitWarning.prototype, process.env.IP, function() {
-//   console.log("Server is running...");
-// });

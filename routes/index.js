@@ -20,4 +20,6 @@ router.get("/pinktulleskirt", (req, res) => res.render("pinktulleskirt"));
 
 router.get("/whatsinmybag", (req, res) => res.render("whatsinmybag"));
 
+router.get("/static", (req, res) => res.render("static"));
+
 module.exports = router;

@@ -1,4 +1,7 @@
-/* UTILIZE SASS??  */
+body {
+  max-width: 100%;
+  min-width: 600px !important;
+}
 
 #title {
   display: block;
@@ -18,6 +21,11 @@
 /* ----------
    NAVBAR 
    ----------*/
+
+.navbar-toggle {
+  margin: 0 auto;
+}
+
 #mainNavbar {
   text-align: center;
   padding-left: 160px;
@@ -37,6 +45,8 @@
 }
 
 nav ul li:last-child {
+  margin-bottom: 0;
+  margin-top: 8px;
   float: right;
 }
 
@@ -110,6 +120,12 @@ HOMEPAGE BODY
   font-size: 25px;
 }
 
+@media screen and (max-width: 990px) {
+  .mpTitle {
+    font-size: 22px;
+  }
+}
+
 .mpDate {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
@@ -119,6 +135,19 @@ HOMEPAGE BODY
   width: 20%;
   padding: 10px;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 990px) {
+  .mpDate {
+    font-size: 12px;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .mpDate {
+    width: 35%;
+  }
 }
 
 hr.style-two {
@@ -139,6 +168,16 @@ hr.style-two {
   align-content: center;
 }
 
+@media screen and (max-width: 770px) {
+  .mpImg1 {
+    margin-left: 15%;
+    width: 70%;
+    height: 70%;
+    z-index: 1;
+    border: 20px solid white;
+  }
+}
+
 .mpImg2 {
   /* edit for media query */
   position: relative;
@@ -147,6 +186,16 @@ hr.style-two {
   display: block;
   align-content: center;
   margin-left: 38%;
+}
+
+@media screen and (max-width: 770px) {
+  .mpImg2 {
+    margin-left: 7.5%;
+    width: 85%;
+    height: 85%;
+    z-index: 1;
+    border: 20px solid white;
+  }
 }
 
 .mpImg3 {
@@ -158,6 +207,16 @@ hr.style-two {
   align-content: center;
 }
 
+@media screen and (max-width: 770px) {
+  .mpImg3 {
+    margin-left: 12%;
+    width: 75%;
+    height: 75%;
+    z-index: 1;
+    border: 20px solid white;
+  }
+}
+/* 
 .social1 {
   position: absolute;
   background: #ece0d3;
@@ -185,7 +244,7 @@ hr.style-two {
   padding: 18px;
 }
 
-/* REVERSE!!!! */
+
 .social2:hover {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -211,7 +270,7 @@ hr.style-two {
   padding-right: 150px;
   transition: 500ms;
   text-align: start;
-}
+}*/
 
 .overlay-text1 {
   font-family: "Rubik", sans-serif;
@@ -224,6 +283,17 @@ hr.style-two {
   padding: 50px;
   background: #ece0d3;
   border: 20px solid #ffffff;
+}
+
+@media screen and (max-width: 770px) {
+  .overlay-text1 {
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 0px;
+    width: 100%;
+    padding: 30px 20px;
+    z-index: 0;
+  }
 }
 
 .overlay-text2 {
@@ -239,6 +309,29 @@ hr.style-two {
   border: 20px solid #ffffff;
 }
 
+@media screen and (max-width: 1200px) {
+  .overlay-text2 {
+    margin-top: -38.5%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .overlay-text2 {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .overlay-text2 {
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 0px;
+    width: 100%;
+    padding: 30px 20px;
+    z-index: 0;
+  }
+}
+
 .overlay-text3 {
   font-family: "Rubik", sans-serif;
   font-size: 12px;
@@ -250,6 +343,24 @@ hr.style-two {
   padding: 50px;
   background: #ece0d3;
   border: 20px solid #ffffff;
+}
+
+@media screen and (max-width: 990px) {
+  .overlay-text3 {
+    padding: 30px;
+    margin-top: -42%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .overlay-text3 {
+    text-align: center;
+    margin-top: -40px;
+    margin-left: 0px;
+    width: 100%;
+    padding: 30px 20px;
+    z-index: 0;
+  }
 }
 
 .mpBtn2 {
@@ -265,6 +376,24 @@ hr.style-two {
   text-transform: uppercase;
   border: double 4px #ece0d3;
   text-decoration: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .mpBtn2 {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .mpBtn2 {
+    margin-left: 8%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .mpBtn2 {
+    margin-left: 33%;
+  }
 }
 
 .mpBtn2:hover {
@@ -288,6 +417,30 @@ hr.style-two {
   text-decoration: none !important;
 }
 
+@media screen and (max-width: 1200px) {
+  .mpBtn {
+    margin-left: 480px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mpBtn {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .mpBtn {
+    margin-left: 330px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .mpBtn {
+    margin-left: 140px;
+  }
+}
+
 .mpBtn:hover {
   background: #ece0d3;
   color: #000000;
@@ -299,7 +452,7 @@ hr.style-two {
   color: #ffffff;
   padding: 10px 40px;
   margin-top: -100px;
-  margin-left: 580px;
+  margin-left: 595px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   font-size: 12px;
@@ -313,6 +466,30 @@ hr.style-two {
   background: #ece0d3;
   color: #000000;
   border: double 4px #000000;
+}
+
+@media screen and (max-width: 1200px) {
+  .mpBtn3 {
+    margin-left: 480px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mpBtn3 {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .mpBtn3 {
+    margin-left: 330px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .mpBtn3 {
+    margin-left: 140px;
+  }
 }
 
 /* --------------
@@ -353,14 +530,13 @@ INDV PAGES
   text-align: center;
   display: block;
   font-size: 14px;
-  padding: 70px 330px;
+  padding: 5% 22%;
 }
 
 .pageBtn {
   background: #000000;
   color: #ffffff;
   padding: 10px 40px;
-  /* fix!!!!!! */
   margin-left: 45%;
   margin-bottom: 100px;
   font-family: "Roboto Condensed", sans-serif;
@@ -369,6 +545,24 @@ INDV PAGES
   letter-spacing: 1px;
   text-transform: uppercase;
   border: double 4px #ece0d3;
+}
+
+@media screen and (max-width: 1200px) {
+  .pageBtn {
+    margin-left: 44%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .pageBtn {
+    margin-left: 41%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .pageBtn {
+    margin-left: 39%;
+  }
 }
 
 .pageBtn:hover {
@@ -380,25 +574,25 @@ INDV PAGES
 /* -----------
 LOGIN
 ----------- */
-/* FIND A WAY TO DRY THIS UP ALSO BTNS!!!! */
+
 #loginTitle {
   font-family: "Playfair Display", serif;
   color: black;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 20px;
-  margin-left: 380px;
+  margin-left: 58%;
   margin-bottom: 50px;
   text-transform: uppercase;
 }
 
 #loginTitle.login {
-  margin-left: 430px;
+  margin-left: 67%;
   margin-top: -60px;
 }
 
 #loginTitle.suTitle {
-  margin-left: 420px;
+  margin-left: 65%;
   margin-bottom: 20px;
   padding-top: 25px;
 }
@@ -409,7 +603,6 @@ LOGIN
   background: #000000;
   color: #ffffff;
   padding: 7px 40px;
-  /* fix!!!!!! */
   float: right;
   margin-right: 25px;
   margin-bottom: 15px;
@@ -448,7 +641,8 @@ input {
 
 .box {
   background: #ebe2d7;
-  width: 45%;
+  max-width: 45%;
+  min-width: 600px;
   height: 75%;
   margin: 0 auto;
   padding-top: 0px;
@@ -485,7 +679,7 @@ input::placeholder {
   font-weight: 300;
   font-size: 11px;
   padding-top: 0;
-  padding-left: 380px;
+  padding-left: 56%;
   text-transform: uppercase;
 }
 
@@ -518,8 +712,7 @@ DASHBOARD
   background: #000000;
   color: #ffffff;
   padding: 10px 60px;
-  /* fix!!!!!! */
-  margin-left: 45%;
+  margin-left: 43%;
   margin-bottom: 100px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
@@ -530,11 +723,42 @@ DASHBOARD
   text-decoration: none !important;
 }
 
+@media screen and (max-width: 990px) {
+  .dashBtn {
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .dashBtn {
+    margin-left: 38%;
+  }
+}
+
 .dashBtn:hover {
   background: #ece0d3;
   color: #000000;
   border: double 4px #000000;
 }
+
+/* ------------
+STATIC PAGE
+------------ */
+
+.staticContainer {
+  margin: 5%;
+  width: 100%;
+}
+
+.sTitle {
+  padding-right: 22%;
+  padding-top: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  text-align: end;
+  padding-bottom: 20%;
+}
+
 /* ---------
 ERROR MSG
 ---------- */
@@ -591,7 +815,7 @@ FOOTER
   object-fit: fill;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
   #collage {
     -moz-column-count: 3;
     -webkit-column-count: 3;
